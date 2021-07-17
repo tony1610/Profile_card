@@ -1,0 +1,127 @@
+/* ///////////////////////GLOBAL */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  width: 375px;
+  height: 667px;
+  position: relative;
+}
+
+/* ///////////////////////////// IMAGES */
+
+.top_image {
+  position: absolute;
+  opacity: 0.5;
+  width: 400px;
+  top: -150px;
+  left: -250px;
+}
+
+.bottom_image {
+  position: absolute;
+  width: 400px;
+  bottom: -100px;
+  right: -200px;
+}
+
+.BG_card {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 325px;
+  height: 375px;
+  border-radius: 10px;
+}
+
+.profile_picture {
+  position: absolute;
+  left: 110px;
+  top: 90px;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+.name_age_city {
+  border-bottom: 1px solid hsla(227, 10%, 46%, 0.304);
+  height: 160px;
+}
+
+.name_age_city h1 {
+  position: absolute;
+  color: hsl(229, 23%, 23%);
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+  top: 225px;
+  left: 100px;
+}
+.name_age_city p {
+  position: absolute;
+  color: hsl(227, 10%, 46%);
+  text-align: center;
+  font-size: 14px;
+  text-transform: capitalize;
+  top: 255px;
+  left: 140px;
+}
+.name_age_city span {
+  color: hsl(227, 10%, 46%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.info {
+  text-transform: capitalize;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  margin: 0px 25px;
+}
+.info h1 {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+.info p {
+  font-size: 12px;
+  color: hsl(227, 10%, 46%);
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .top_image {
+    position: absolute;
+    width: 900px;
+    top: -550px;
+    left: -300px;
+  }
+
+  .bottom_image {
+    position: absolute;
+    width: 900px;
+    bottom: -600px;
+    right: -300px;
+  }
+}
